@@ -51,7 +51,7 @@ public class RegexClassValidation {
 
     ////Enter the Password - should be minimum 8 Character
     public static void validationForPassword(String password){
-        String regex="^[a-zA-Z]{8}$";
+        String regex="^[a-zA-z0-9!@#$%^&*()?]{8}$";
         Pattern pattern=Pattern.compile(regex);
         Matcher matcher=pattern.matcher(password);
         if(matcher.matches()){
