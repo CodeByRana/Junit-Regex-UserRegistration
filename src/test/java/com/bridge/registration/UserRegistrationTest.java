@@ -60,18 +60,23 @@ public class UserRegistrationTest {
                 Assert.assertTrue(RegexClassValidation.RegexFunctionEmailId("dipak@gmail.com.in"));
         }
         @Test
-        public void givenEmailId_CaseThree_WhenEmailIdCorrect_ShouldReturnValidId() {
+        public void givenEmailId_CaseThree_WhenEmailIdWillCorrect_thenShouldReturnValidId() {
 
                 Assert.assertTrue(RegexClassValidation.RegexFunctionEmailId("dipak.123@gmail.com"));
         }
         @Test
-        public void givenEmailId_CaseFour_WhenEmailIdCorrect_ShouldReturnValidId() {
+        public void givenEmailId_CaseFour_WhenEmailIdWillCorrect_thenShouldReturnValidId() {
 
                 Assert.assertTrue(RegexClassValidation.RegexFunctionEmailId("rana.deepak@gmail.com"));
         }
         //Test Case for Mobile Number
         @Test
-        public void givenMobileNo_CaseOne_WhenMobileNoCorrect_ShouldReturnValidMobNo(){
+        public void givenMobileNo_CaseFive_WhenMobileNoWillCorrect_thenShouldReturnValidMobNo(){
                 Assert.assertTrue(RegexClassValidation.RegexFunctionEmailId("91 7011133639"));
+        }
+        //Test Case for Password minimum 8 characters
+        @Test
+        public void givenPassword_CaseSix_WhenPassValidationWillCorrect_thenShouldReturnValidPass(){
+                Assert.assertTrue(RegexClassValidation.validationForPassword("deepak"));
         }
 }

@@ -46,6 +46,7 @@ public class UserRegistration {
         }else {
             System.out.println("InValid Mobile Number");
         }
+
         //Enter the Password - should be minimum 8 Character
         String password="";
         RegexClassValidation.validationForPassword("deepak");
