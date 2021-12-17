@@ -69,4 +69,9 @@ public class UserRegistrationTest {
 
                 Assert.assertTrue(RegexClass.RegexFunctionEmailId("rana.deepak@gmail.com"));
         }
+        //Test Case for Mobile Number
+        @Test
+        public void givenMobileNo_CaseOne_WhenMobileNoCorrect_ShouldReturnValidMobNo(){
+                Assert.assertTrue(RegexClass.RegexFunctionEmailId("7011133639"));
+        }
 }

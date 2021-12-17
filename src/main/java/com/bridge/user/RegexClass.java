@@ -4,6 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RegexClass {
+
     //Check RegexClass for first name validation
     public static boolean RegexFunctionFirstname(String firstName) {
 
@@ -14,6 +15,7 @@ public class RegexClass {
 
         return matcher.matches();
     }
+
     //Check RegexClass for first name validation
     public static boolean RegexFunctionLastname(String lastName) {
 
@@ -24,6 +26,7 @@ public class RegexClass {
 
         return matcher.matches();
     }
+
     //Check RegexClass for first name validation
     public static boolean RegexFunctionEmailId(String emailId) {
 
@@ -31,6 +34,17 @@ public class RegexClass {
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(emailId);
+
+        return matcher.matches();
+    }
+
+    //Check RegexClass for first name validation
+    public static boolean RegexFunctionMobileNo(String mobileNo) {
+
+        String regex = "^(0/91)?[7-9][0-9]{9}$";
+
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(mobileNo);
 
         return matcher.matches();
     }
