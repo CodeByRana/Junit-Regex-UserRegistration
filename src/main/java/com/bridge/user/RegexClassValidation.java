@@ -50,7 +50,7 @@ public class RegexClassValidation {
     }
 
     ////Enter the Password - should be minimum 8 Character
-    public static boolean validationForPassword(String password){
+    public static boolean RegexFunctionPassword(String password){
 
         String regex="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[~!@#$%^&*():<>?]).{8,20}$";
 
