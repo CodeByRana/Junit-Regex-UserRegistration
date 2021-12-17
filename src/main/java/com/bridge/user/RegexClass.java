@@ -14,4 +14,14 @@ public class RegexClass {
 
         return matcher.matches();
     }
+    //Check RegexClass for first name validation
+    public static boolean RegexFunctionLastname(String lastName) {
+
+        String regex = "^[A-Z][a-zA-Z]{2,}$";
+
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(lastName);
+
+        return matcher.matches();
+    }
 }

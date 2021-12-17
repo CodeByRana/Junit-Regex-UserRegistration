@@ -19,5 +19,13 @@ public class UserRegistration {
         }else {
             System.out.println("InValid First name");
         }
+        //Enter last name
+        System.out.println("Please Enter the last name : ");
+        String lastName = sc.next();
+        if (RegexClass.RegexFunctionFirstname(lastName)){
+            System.out.println("Valid last name");
+        }else {
+            System.out.println("InValid last name");
+        }
     }
 }
