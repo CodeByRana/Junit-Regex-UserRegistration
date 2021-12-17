@@ -9,12 +9,12 @@ public class UserRegistration {
 
         //Taking scanner
         Scanner sc = new Scanner(System.in);
-        RegexClass Regex = new RegexClass();
+        RegexClassValidation Regex = new RegexClassValidation();
 
         //Enter first name
         System.out.println("Please Enter the first name : ");
         String firstName = sc.next();
-        if (RegexClass.RegexFunctionFirstname(firstName)){
+        if (RegexClassValidation.RegexFunctionFirstname(firstName)){
             System.out.println("Valid First name");
         }else {
             System.out.println("InValid First name");
@@ -23,7 +23,7 @@ public class UserRegistration {
         //Enter last name
         System.out.println("Please Enter the last name : ");
         String lastName = sc.next();
-        if (RegexClass.RegexFunctionFirstname(lastName)){
+        if (RegexClassValidation.RegexFunctionFirstname(lastName)){
             System.out.println("Valid last name");
         }else {
             System.out.println("InValid last name");
@@ -32,7 +32,7 @@ public class UserRegistration {
         //Enter Valid Email ID
         System.out.println("Please Enter the email Id : ");
         String emailId = sc.next();
-        if (RegexClass.RegexFunctionEmailId(emailId)){
+        if (RegexClassValidation.RegexFunctionEmailId(emailId)){
             System.out.println("Valid email");
         }else {
             System.out.println("InValid email");
@@ -41,10 +41,13 @@ public class UserRegistration {
         //Enter Mobile No - should be country code and 10 digit numeric num
         System.out.println("Please Enter the Mobile No : ");
         String mobileNo = sc.next();
-        if (RegexClass.RegexFunctionMobileNo(mobileNo)){
+        if (RegexClassValidation.RegexFunctionMobileNo(mobileNo)){
             System.out.println("Valid Mobile number");
         }else {
             System.out.println("InValid Mobile Number");
         }
+        //Enter the Password - should be minimum 8 Character
+        String password="";
+        RegexClassValidation.validationForPassword("deepak");
     }
 }

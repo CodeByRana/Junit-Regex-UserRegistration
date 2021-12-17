@@ -3,7 +3,7 @@ package com.bridge.user;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class RegexClass {
+public class RegexClassValidation {
 
     //Check RegexClass for first name validation
     public static boolean RegexFunctionFirstname(String firstName) {
@@ -41,11 +41,24 @@ public class RegexClass {
     //Check RegexClass for first name validation
     public static boolean RegexFunctionMobileNo(String mobileNo) {
 
-        String regex = "^(0/91)?[7-9][0-9]{9}$";
+        String regex = "^[0-9]{2}\\s?[0-9]{10}$";
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(mobileNo);
 
         return matcher.matches();
+    }
+
+    ////Enter the Password - should be minimum 8 Character
+    public static void validationForPassword(String password){
+        String regex="^[a-zA-Z]{8}$";
+        Pattern pattern=Pattern.compile(regex);
+        Matcher matcher=pattern.matcher(password);
+        if(matcher.matches()){
+            System.out.println("Valid Password ");
+        }
+        else {
+            System.out.println("Invalid - Password");
+        }
     }
 }
