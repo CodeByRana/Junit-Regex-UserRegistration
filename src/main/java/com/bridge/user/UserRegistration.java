@@ -27,5 +27,13 @@ public class UserRegistration {
         }else {
             System.out.println("InValid last name");
         }
+        //Enter Valid Email ID
+        System.out.println("Please Enter the email Id : ");
+        String emailId = sc.next();
+        if (RegexClass.RegexFunctionEmailId(emailId)){
+            System.out.println("Valid email");
+        }else {
+            System.out.println("InValid email");
+        }
     }
 }
