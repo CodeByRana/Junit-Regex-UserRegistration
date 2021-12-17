@@ -74,4 +74,9 @@ public class UserRegistrationTest {
         public void givenMobileNo_CaseOne_WhenMobileNoCorrect_ShouldReturnValidMobNo(){
                 Assert.assertTrue(RegexClassValidation.RegexFunctionEmailId("91 7011133639"));
         }
+        //Test Case for Password minimum 8 characters
+        @Test
+        public void givenPassword_CaseSix_WhenPassValidationWillCorrect_thenShouldReturnValidPass(){
+                Assert.assertTrue(RegexClassValidation.RegexFunctionPassword("deepak"));
+        }
 }
